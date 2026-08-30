@@ -1,32 +1,66 @@
-# React + TypeScript + Vite
+# FunGro — India's Experiential Learning & Teen Earning Platform 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, high-performance web clone of the FunGro platform, built with **React 19, Vite, and Tailwind CSS v4**.
 
-Currently, two official plugins are available:
+This project has been extensively optimized for **production-grade SEO** and **Core Web Vitals** through a custom **Static Site Generation (SSG)** architecture, ensuring extremely fast load times and perfect indexability by search engines.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 🔗 Live Deployment
+**[View the Live Demo on Vercel](https://fungro-demo.vercel.app/)**  
+*(Note: Vercel project link: [https://vercel.com/md-faisal-aftab/fungro-demo](https://vercel.com/md-faisal-aftab/fungro-demo))*
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Key Features & Architecture
 
-## Expanding the Oxlint configuration
+- **React 19 & Tailwind CSS 4**: Built using the latest modern frontend stack for rapid styling and optimized component rendering.
+- **Custom SSG (Static Site Generation)**: Pre-renders all public routes into static `index.html` files at build time (`prerender.js`). This eliminates the blank-page loading state of traditional SPAs, improving Largest Contentful Paint (LCP).
+- **Google Search Central SEO Compliance**:
+  - Valid **JSON-LD Schema Markup** injected directly into the HTML `<head>` (`Organization`, `WebSite`, `Article`, `FAQPage`, `BreadcrumbList`).
+  - Explicit canonical URLs, unique Meta Titles, Descriptions, and OpenGraph/Twitter Cards for every route.
+- **Core Web Vitals Optimized**:
+  - Explicit `width`, `height`, and `loading="lazy"` attributes on images to eliminate Cumulative Layout Shift (CLS).
+  - Proper HTML semantics with correct heading hierarchy (H1 -> H2 -> H3) for accessibility.
+- **React Helmet Async**: Dynamically manages document head tags, fully integrated with the SSG engine to extract and hoist tags during the build step.
+- **Zero-Config Vercel Ready**: Out-of-the-box compatibility with Vercel's standard Vite deployment pipeline.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🛠️ Tech Stack
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+- **Framework**: React 19
+- **Bundler**: Vite
+- **Styling**: Tailwind CSS v4
+- **Routing**: React Router DOM
+- **SEO & Meta**: React Helmet Async
+- **Icons**: Lucide React
+
+## 🚀 Getting Started Locally
+
+### Prerequisites
+- Node.js (v18+ recommended)
+- npm
+
+### Installation
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+   The site will be available at `http://localhost:5173`.
+
+### Building for Production
+To build the static HTML files (SSG) and the client bundle:
+```bash
+npm run build
+```
+This runs the TypeScript compiler, the Vite client/server builds, and the custom `prerender.js` script to generate static HTML for all routes into the `dist` folder.
+
+You can preview the production build locally:
+```bash
+npm run preview
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+---
+
+*Designed and optimized with ❤️ for young Indian creators and top brands.*
