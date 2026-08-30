@@ -6,7 +6,6 @@ This project has been extensively optimized for **production-grade SEO** and **C
 
 ### 🔗 Live Deployment
 **[View the Live Demo on Vercel](https://fungro-demo.vercel.app/)**  
-*(Note: Vercel project link: [https://vercel.com/md-faisal-aftab/fungro-demo](https://vercel.com/md-faisal-aftab/fungro-demo))*
 
 ---
 
