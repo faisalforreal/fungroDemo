@@ -1,0 +1,19 @@
+﻿# robots.txt for FunGro (https://www.funngro.com)
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemaps
+Sitemap: https://www.funngro.com/sitemap.xml
+
+# AI & Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: PerplexityBot
+Allow: /

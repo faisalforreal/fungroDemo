@@ -1,0 +1,16 @@
+﻿{
+  "name": "FunGro — Teen Earning & Experiential Learning",
+  "short_name": "FunGro",
+  "description": "70 lakh young Indians earn and learn by working with India's top brands.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070a09",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
